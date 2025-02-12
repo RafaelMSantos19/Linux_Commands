@@ -29,6 +29,8 @@ Esse repositorio se reserva a amarzena comandos para se utilizar dentro do linux
 
         ls -l <paht> ( lista todos as pastas e arquivos mostrando a permição dos mesmos )
 
+        ls <path> | grep <input_text> ( use para lista com o filtro de texto )
+
 - **pwd** ( _print working directory_): use para mostra seu diretorio atual
 
     Exemplo:
@@ -84,5 +86,88 @@ Esse repositorio se reserva a amarzena comandos para se utilizar dentro do linux
         mv <origin_file> <destiny_file> (move ou renomeia um arquivo)
 
 
+## Vizualização e Edição de arquivos: 
 
+- **cat** ( _concatenate _ ): use para exibir o conteúdo de um arquivo no terminal.
+
+    Exemplo:
+
+        cat <arquivo> (exibe o conteúdo do arquivo)
+
+        cat arquivo1.txt arquivo2.txt (exibe o conteúdo de vários arquivos em sequência)
+
+        cat -n <arquivo> (exibe o conteúdo do arquivo com numeração de linhas)
+
+        cat > novo_arquivo.txt (cria um novo arquivo e permite digitar o conteúdo diretamente no terminal; pressione Ctrl+D para salvar e sair)
+
+- **tail** ( _tail end_ ): use para exibir as últimas linhas de um arquivo.
+
+    Exemplo:
+
+      tail <arquivo> (exibe as últimas 10 linhas do arquivo)
+
+      tail -n 20 <arquivo> (exibe as últimas 20 linhas do arquivo)
+
+      tail -f <arquivo> (exibe as últimas linhas do arquivo em tempo real, útil para monitorar logs)
+
+- **head** ( _head_ ): use para exibir as primeiras linhas de um arquivo.
+
+    Exemplo:
+
+        head <arquivo> (exibe as primeiras 10 linhas do arquivo)
+
+        head -n 15 <arquivo> (exibe as primeiras 15 linhas do arquivo)
+
+- **less** ( _less_ ): use para visualizar arquivos grandes de forma paginada.
+
+    Exemplo:
+
+        less <arquivo> (abre o arquivo para visualização paginada; use as teclas de seta para navegar, e pressione "q" para sair)
+
+        less +F <arquivo> (abre o arquivo e segue novas linhas em tempo real, semelhante ao `tail -f`)
+
+- **more** ( _more_ ): use para visualizar arquivos grandes de forma paginada (similar ao less, mas com menos funcionalidades).
+
+    Exemplo:
+
+        more <arquivo> (abre o arquivo para visualização paginada; pressione "Enter" para avançar e "q" para sair)
+
+- **grep** ( _global regular expression print_ ): use para pesquisar texto dentro de arquivos.
+
+    Exemplo:
+
+      grep "texto" <arquivo> (procura a palavra "texto" no arquivo)
+
+      grep -i "texto" <arquivo> (procura a palavra "texto" ignorando maiúsculas e minúsculas)
+
+      grep -r "texto" <diretorio> (procura a palavra "texto" em todos os arquivos do diretório, recursivamente) 
+
+- **diff** ( _difference _ ): use para comparar dois arquivos e mostrar as diferenças.
+
+    Exemplo:
+
+        diff <arquivo1> <arquivo2> (mostra as diferenças entre os dois arquivos)
+
+        diff -u <arquivo1> <arquivo2> (mostra as diferenças em formato unificado)
+
+- ### Nano:
+
+- ### Vim:
+
+## Controle de Permissão:
+
+## Gerenciamento de Usuarios:
+
+## Execução de Arquivos:
+
+## FireWall:
+
+## SystemCTL:
+
+## Crontab:
+
+
+curl
+
+wget
 
